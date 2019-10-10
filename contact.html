@@ -1,24 +1,88 @@
----
-layout: page
-title: Contact
----
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="favicon.ico">
 
-<form action="https://formspree.io/{{site.email}}" method="POST">
-    
-    <div class="form-group row">
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
+      
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+      
+  </head>
 
-        <div class="col-md-6">
-            <input class="form-control" type="text" name="name" placeholder="Name">
+  <body>
+      
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href=".">ZapatitoMío</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="col-md-6">
-            <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address">
+    <header class="py-5 bg-image-fw" style="background-image: url('https://www.gruposystem.com/wp-content/uploads/contacto-1-1024x336.jpg');">
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+          <h1>Contáctanos</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Dejanos tus datos y un consultor se pondrá en contacto contigo lo más pronto posible.</p>
+                        <p>Si quieres formar parte de nuestro equipo, envia tus datos a <b><i>reclutamiento@zapatito.com</i></b></p>
+                    </div>
+                    <div class="col-md-6">
+                        <input placeholder="Nombre" class="form-control space-form" required>
+                        <input placeholder="Apellido" class="form-control space-form" required>
+                        <input type="email space-form" placeholder="Correo electrónico" class="form-control space-form" required>
+                        <textarea class="form-control space-form" placeholder="Tu mensaje"></textarea>
+                        <center><button class="btn btn-default">ENVIAR</button></center>
+                    </div>
+                </div>
         </div>
+        
+      </section>
 
-    </div>
+    <section class="py-5 bg-image-full" style="background-image: url('https://www.allcitycanvas.com/wp-content/uploads/2019/08/nike-sb-orange-label.jpg');">
+        <div style="height: 200px;"></div>
+    </section>
 
-    <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message"></textarea>
+    <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; Zapatito Mío 2019</p>
+        </div>
+    </footer>
+
+   
+
+    <!-- build:js -->
+    <script src="assets/js/main.js"></script>
+     <!-- endbuild -->
     
-    <input class="btn btn-success" type="submit" value="Send">
-
-</form>
+    <script src="assets/js/theme.js"></script>
+    
+  </body>
+</html>

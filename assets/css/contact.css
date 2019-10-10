@@ -1,0 +1,22 @@
+@media(min-width: 500px){
+    .bg-image-fw{
+        background-repeat: no-repeat;
+        background-position: center -150px;
+        background-size: 100%;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.space-form{
+    margin-bottom: 10px;
+}
+
+.bg-image-fw{
+    background-repeat: no-repeat;
+    background-position: center 45%;
+    background-size: 100%;
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+}
