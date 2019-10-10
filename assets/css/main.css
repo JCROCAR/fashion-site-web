@@ -42,6 +42,19 @@ footer {
   height: 70px;
 }
 
+.card {
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px #AAAAAA;
+}
+
+.card img {
+  text-align: center;
+  width: 130px;
+  height: 130px;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
