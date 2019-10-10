@@ -1,4 +1,3 @@
-"use strict";
 
 var gulp = require('gulp'),
   concat = require('gulp-concat'),
@@ -33,20 +32,19 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
 });
 
 gulp.task('compileSass', function() {
-  return gulp.src("assets/css/main.scss")
-      .pipe(maps.init())
-      .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer())
-      .pipe(maps.write('./'))
-      .pipe(gulp.dest('assets/css'))
-      .pipe(browserSync.stream());
+  return gulp.src([
+    'assets/css/main.scss'
+    ])
+    .pipe(sass())
+    .pipe(gulp.dest('src/css/'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("minifyCss", ["compileSass"], function() {
   return gulp.src("assets/css/main.css")
     .pipe(cssmin())
     .pipe(rename('main.min.css'))
-    .pipe(gulp.dest('docs/assets/css'));
+    .pipe(gulp.dest('docs/assets/css/'));
 });
 
 
@@ -56,7 +54,6 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.watch(['assets/css/main.scss'], ['compileSass']);
 gulp.watch(['assets/css/main.css'], ['minifyCss']);
 gulp.watch(['assets/js/vendor/jquery-3.3.1.min.js',
 'assets/js/vendor/popper.min.js',
